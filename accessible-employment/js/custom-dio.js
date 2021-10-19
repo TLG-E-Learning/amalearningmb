@@ -719,3 +719,13 @@ function setPosition(termObj, selectorObj) {
     })
 
 }
+
+function loadpage() {
+    if (window.innerWidth < 768) {
+        setTimeout(function() {
+            location.href = "https://amalearningmb.ca/";
+        }, 1000);
+    } else {
+        location.href = "https://amalearningmb.ca/";
+    }
+}

@@ -645,3 +645,13 @@ function updateChangeLangUrl() {
         selector.attr("href", href);
     })
 }
+
+function loadpage() {
+    if (window.innerWidth < 768) {
+        setTimeout(function() {
+            location.href = "https://amalearningmb.ca/";
+        }, 1000);
+    } else {
+        location.href = "https://amalearningmb.ca/";
+    }
+}
