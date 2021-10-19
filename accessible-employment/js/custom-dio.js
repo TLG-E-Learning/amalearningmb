@@ -720,7 +720,7 @@ function setPosition(termObj, selectorObj) {
 
 }
 
-function loadpage() {
+$(document).ready(function() {
     if (window.innerWidth < 768) {
         setTimeout(function() {
             location.href = "https://amalearningmb.ca/";
@@ -728,4 +728,4 @@ function loadpage() {
     } else {
         location.href = "https://amalearningmb.ca/";
     }
-}
+})
