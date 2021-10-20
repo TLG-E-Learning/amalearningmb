@@ -928,14 +928,17 @@ overirdes/*/
             
             .checkbox>label:before {
                 content: "";
-                margin-left: -50px;
             }
             
             div.checkbox input[type='checkbox'] {
-                border: 1px red dashed;
-                margin-left: -35px;
-                margin-bottom: -50;
+                border: 0px red dashed;
                 content: "";
+                margin-left: -35px;
+            }
+            
+            input[type='checkbox'] {
+                border: red 1px dashed;
+                margin-top: 7px;
             }
             
             #alert-icon-img {
