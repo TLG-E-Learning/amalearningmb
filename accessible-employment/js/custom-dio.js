@@ -180,7 +180,7 @@ function triggerMenuItem() {
     let el = $("[data-pageindex=" + index + "]");
     $(el).trigger("click");
     $(el).siblings("summary").trigger("click");
-    console.log("menu item triggered")
+    //console.log("menu item triggered")
 }
 
 /*/
