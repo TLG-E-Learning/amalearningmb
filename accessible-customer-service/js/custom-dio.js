@@ -6,7 +6,7 @@ Filename: custom-dio.js
 *
 */
 
-
+const { jsPDF } = window.jspdf;
 var crsProgress = [];
 var lcData;
 
@@ -52,6 +52,7 @@ jQuery(document).ready(function($) {
                 updateAriaState(self);
                 closeOverlay();
                 initToggleMedia();
+                printCertificate();
 
 
 
@@ -655,3 +656,33 @@ function loadpage() {
         location.href = "https://amalearningmb.ca/";
     }
 }
+
+
+function printCertificate(){
+   
+ 
+    $("#print-btn").click(function(){
+        var source = document.getElementById('certModal');
+        var margins = {
+            top: 80,
+            bottom: 60,
+            left: 40,
+            width: 522
+        };
+        const scale = window.innerWidth / window.outerWidth;
+        if (scale != 1) {
+           document.body.style.zoom = scale;            
+        }
+        var doc = new jsPDF();
+        doc.fromHTML(source,
+            margins.left,
+            margins.top, {
+          'width': margins.width,
+          'elementHandlers':''
+
+            },
+            function(dispose){
+                doc.save('Test.pdf');
+            }, margins);
+        })
+    }

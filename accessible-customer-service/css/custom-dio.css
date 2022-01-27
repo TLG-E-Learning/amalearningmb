@@ -1122,3 +1122,97 @@ button[aria-label='Restart']:before {
     vertical-align: -12%;
 
 }
+
+
+/*=======Certificate======*/
+
+
+#certModal{
+    width:1900px;
+    height:1000px;
+}
+
+#certModal.modal{
+
+    max-width:1056px;
+    max-height:580px;
+    padding:0px;
+    border-radius: 5px;
+    border:1px solid #0F5640;
+}
+
+#certModal > div > h4{
+    font-size:38px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:75px;
+    
+}
+
+.certDiv{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    padding-left:120px;
+    position:relative;
+    z-index:1;
+}
+
+.cslogo{
+    width:130px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+
+#certModal > div.certDiv > img.mblgo-cert{
+    width:180px;
+    height:auto;
+    position:absolute;
+    right:60px;
+    bottom:-90px;
+}
+
+.certDiv>p{
+    font-size:24px;
+    text-align:center;
+}
+
+#certModal > div > p:nth-child(3){
+    margin-top:50px;
+}
+
+#certModal > div.greenbox{
+    background-color:#0F5640;
+    width:150px;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    
+}
+
+.close-modal{
+    visibility:hidden;
+}
+
+.acs-cert{
+    font-weight:bold;
+    color:#0F5640;
+}
+
+.date-cert{
+    width:200px;
+    position:absolute;
+    bottom:-90px;
+    left:200px;
+    font-size:16px;
+}
+
+a[rel='modal:close']{
+    color:white;
+    position:absolute;
+    bottom:10px;
+    left:60px;
+    z-index:100;
+}
